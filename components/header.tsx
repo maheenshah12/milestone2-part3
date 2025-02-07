@@ -17,10 +17,12 @@ const Header = () => {
           {/* Hamburger Menu for Mobile */}
           <div className="lg:hidden flex items-center">
             {/* Using the GiHamburgerMenu icon directly instead of Image */}
-            <GiHamburgerMenu
-              className="w-6 h-6 cursor-pointer text-white"
-              onClick={() => setMenuOpen(!menuOpen)}
-            />
+            <div onClick={() => setMenuOpen(!menuOpen)}>
+              <GiHamburgerMenu
+                size={24}
+                color="white"
+              />
+            </div>
           </div>
 
           {/* Logo */}

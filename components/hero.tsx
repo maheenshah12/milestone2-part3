@@ -40,7 +40,7 @@ const HomePage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Hi, I'm a Frontend Developer
+          Hi, I am a Frontend Developer
         </motion.h1>
         <motion.p
           className="text-lg text-gray-700 leading-relaxed mb-6"
