@@ -2,8 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { GiHamburgerMenu } from "react-icons/gi"; // Import the hamburger menu icon
+// import { GiHamburgerMenu } from "react-icons/gi"; // Import the hamburger menu icon
 import vector from "@/app/assets/Vector.png"; // Assuming this is your close icon image
+import Humburger from "@/app/assets/humburger.png";
 
 const Header = () => {
   // For Hamburger Menu
@@ -17,10 +18,15 @@ const Header = () => {
           {/* Hamburger Menu for Mobile */}
           <div className="lg:hidden flex items-center">
             {/* Using the GiHamburgerMenu icon directly instead of Image */}
-            <GiHamburgerMenu
+            <Image src={Humburger} alt='.' 
+            onClick={() => setMenuOpen(!menuOpen)}
+             className="w-6 h-6 cursor-pointer text-white"
+            />
+            
+            {/* <GiHamburgerMenu
               className="w-6 h-6 cursor-pointer text-white"
               onClick={() => setMenuOpen(!menuOpen)}
-            />
+            /> */}
           </div>
 
           {/* Logo */}
